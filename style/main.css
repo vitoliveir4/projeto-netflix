@@ -1,0 +1,104 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*base*/
+
+body{
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #a39e9e;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/* filme principal*/
+
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/lk.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .descricao {
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+    color: #141414;
+}
+
+.principal .container{
+    width: 70%;
+}
+
+.boxfilme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*carrossel*/
+
+.carrossel{
+    margin-top: 5px;
+}
